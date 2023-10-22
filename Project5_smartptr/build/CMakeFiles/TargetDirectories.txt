@@ -1,0 +1,3 @@
+C:/Users/armor/Project5_smartptr/build/CMakeFiles/ptr.dir
+C:/Users/armor/Project5_smartptr/build/CMakeFiles/edit_cache.dir
+C:/Users/armor/Project5_smartptr/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.5.0)
+project(smartptr)
+
+set(SOURCES
+       
+    ./src/ptr.h
+    ./src/unique_ptr.h
+
+
+    )
+
+include_directories(
+    ./src/
+    )
+add_executable(ptr ./main.cpp ${SOURCES})
