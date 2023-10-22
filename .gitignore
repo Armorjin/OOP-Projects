@@ -16,12 +16,12 @@ _deps
 *-prefix/
 
 ### VisualStudioCode ###
-.vscode/*
-.vscode/settings.json
-.vscode/tasks.json
-.vscode/launch.json
-.vscode/extensions.json
-.vscode/*.code-snippets
+Project5_smartptr/.vscode/*
+Project5_smartptr/.vscode/settings.json
+Project5_smartptr/.vscode/tasks.json
+Project5_smartptr/.vscode/launch.json
+Project5_smartptr/.vscode/extensions.json
+Project5_smartptr/.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
 .history/
