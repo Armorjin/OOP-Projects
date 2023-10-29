@@ -14,7 +14,6 @@ void check(){
     std::cout<<"Data p2: "<<*p2<<"\n";
     std::cout<<"Data p3: "<<((p3)?"unique ptr":"not unique ptr")<<"\n";
 
-    p2 = std::move(p1);
     p3.release();
     std::cout<<"Data p1: "<<*p1<<"\n";
     std::cout<<"Data p2: "<<*p2<<"\n";
