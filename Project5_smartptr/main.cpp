@@ -1,11 +1,23 @@
 #include "ptr.h"
 #include "my_unique_ptr.h"
+#include "weak_ptr.h"
 #include <utility>
 
 //cmake -G  "MinGW Makefiles" ../
-
+void observe()
+{
+    weak_ptr<int> gw;
+    std::cout << "gw.use_count() == " << gw.use_count() << "; ";
+    // we have to make a copy of shared pointer before usage:
+    if (My_shared_ptr<int> spt = gw.lock())
+        std::cout << "*spt == " << *spt << '\n';
+    else
+        std::cout << "gw is expired\n";
+}
 
 void check(){
+
+
     my_unique_ptr<int> p1(new int(100));
     my_unique_ptr<int> p2(new int(200));
     my_unique_ptr<int> p3(new int(2));
@@ -27,6 +39,7 @@ void check(){
 int main(){
 
     std::cout<< "Tests\n";
+    observe();
     check();
     return 0;
 }
