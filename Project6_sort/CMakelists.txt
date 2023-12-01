@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.5.0)
+project(sort)
+
+set(SOURCES
+       
+    ./src/sort.h
+
+    )
+
+include_directories(
+    ./src/
+    )
+add_executable(sort ./main.cpp ${SOURCES})
